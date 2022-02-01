@@ -1,0 +1,75 @@
+.position-container p{
+    color:black;
+    font-weight:500;
+}
+.position-margin {
+    margin:12px;
+}
+
+.position-container h3 {
+    font-size:32px;
+}
+
+.candidate-widecard {
+    grid-template-columns:16px 38px auto 50px;
+    grid-gap:8px;
+    margin-bottom:4px;
+    padding:4px;
+}
+
+.candidate-rank {
+    font-size:20px;
+    text-align:right;
+    margin-top:10px;
+}
+.candidate-tally {
+    font-size:20px;
+    text-align:right;
+    margin-top:8px;
+    margin-right:10px;
+}
+.candidate-widecard img, .candidate-widecard-6p img {
+    width:38px;
+    height:38px;
+    /*border-radius:10000px;*/
+}
+.candidate-name {
+    margin-top:6px;
+    font-size:20px;
+}
+.candidate-party {
+    font-size:10px;
+}
+
+.elected {
+    background-color:rgb(255, 255, 138);
+    border-radius:4px;
+}
+
+#container {
+    width:100%;
+    height:100%;
+    overflow-y:auto;
+}
+
+#container-header {
+    grid-template-columns:auto 264px;
+}
+
+.button-toggle p{
+    display:block;
+    width:auto;
+    height:auto;
+    padding:4px 8px;
+    margin-left:8px;
+    float:left;
+    background-color:white;
+    border-radius:8px;
+    font-size:16px;
+    color:black;
+}
+
+#level {
+    display:block;
+    margin-top:24px;
+}

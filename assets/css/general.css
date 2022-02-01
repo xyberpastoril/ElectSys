@@ -1,0 +1,340 @@
+@font-face {
+
+    font-family: 'product_sansregular';
+    
+    src: url('../font/productsans/product_sans_regular-webfont.woff2') format('woff2'),
+    
+    url('../font/productsans-20190526-210731/product_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    
+    font-style: normal;
+    
+    
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    width:100%;
+    height:100vh;
+    background:#222;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+main {
+    background-color:rgb(255, 255, 255);
+    border:1px solid #ddd;
+    height:auto;
+    width:480px;
+    border-radius:12px;
+    margin:0 auto;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.33);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.33);
+}
+.block {display:block}
+.grid {display:grid}
+/*#vote-grid {
+    grid-template-columns:calc(67% - 8px) calc(33% - 8px);
+    grid-template-areas:
+    "vote-selection vote-selected";
+    grid-gap:16px;
+}
+*/
+#vote-selection {
+    width:auto;
+    height:100vh;
+    margin:0 auto;
+}
+
+#vote-selection-margin {
+    padding:32px;
+}/*
+#vote-selected {
+    padding:16px;
+    width:calc(100% - 32px);
+    height:calc(100vh - 32px);
+}
+*/
+
+.table {display:table;}
+.vertical-center {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.logo-128px {
+    width:128px;
+    height:auto;
+}
+
+.obj-center {
+    margin:0 auto;
+}
+
+.text-center {
+    text-align:center;
+}
+.span-4px {display:block;width:auto;height:4px}
+.span-8px {display:block;width:auto;height:8px}
+.span-16px {display:block;width:auto;height:16px}
+
+.float-left {
+    float:left;
+}
+.float-right {
+    float:right;
+}
+input {
+    height:32px;
+    font-size:18px;
+    text-align:center;
+    border-radius:4px;
+    padding:17px;
+    border:0;
+    background-color:#ffffff;
+    border:1px solid #d6d6d6;
+    border-collapse:collapse;
+}
+
+.button {
+    font-family:'product_sansregular', 'Century Gothic', Arial, Helvetica, sans-serif;
+    padding:10px;
+    background-color:rgb(4, 122, 60);
+    color:white;
+    border-radius:6px;
+    transition:0.3s;
+    border:0;
+    font-weight:600;
+    font-size:16px;
+}
+
+.button:hover {
+    background-color:rgb(4, 138, 68);
+    transition:0.3s;
+}
+
+.button-text {
+    font-family:'product_sansregular', 'Century Gothic', Arial, Helvetica, sans-serif;
+    background-color:rgb(4, 122, 60);
+    font-weight:700;
+}
+
+.button-text:hover {
+    background-color:rgb(4, 138, 68);
+}
+
+.button-text-gray {
+    font-family:'product_sansregular', 'Century Gothic', Arial, Helvetica, sans-serif;
+    color:#2c2c2c;
+    font-weight:700;
+}
+
+.button-text-gray:hover {
+    color:#505050;
+}
+
+.input-lrn {
+    width:384px;
+}
+
+h1 {
+    font-family:'product_sansregular', 'Century Gothic', Arial, Helvetica, sans-serif;
+    /*color:#3c4043;*/
+    font-size:32px;
+}
+
+h2, h3, h4, .main-sponsored-label {
+    font-family:'product_sansregular', 'Century Gothic', Arial, Helvetica, sans-serif;
+    /*color:#202124;*/
+}
+h2 {
+    font-size:48px;
+}
+p {
+    font-family:'product_sansregular', 'Century Gothic', Arial, Helvetica, sans-serif;
+    /*color:#3c4043;*/
+}
+.lastname, .lastname-review {
+    font-weight:900;
+}
+h2, p, h1, a, ul {
+    color:white;
+}
+a {
+    text-decoration:none;
+    font-weight:700;
+    /*color:#3c4043;*/
+}
+
+ul {
+    list-style:none;
+    font-family:'product_sansregular', 'Century Gothic', Arial, Helvetica, sans-serif;
+    /*color:#3c4043;*/
+}
+
+.candidate-card {
+    width:100%;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.25); /* IE */
+  -moz-transform: scale(1.25); /* FF */
+  -webkit-transform: scale(1.25); /* Safari and Chrome */
+  -o-transform: scale(1.25); /* Opera */
+  transform: scale(1.25);
+  margin-right:15px;
+}
+
+label {
+    color:white;
+    font-family:'product_sansregular', 'Century Gothic', Arial, Helvetica, sans-serif;
+}
+
+/* Might want to wrap a span around your checkbox text */
+.checkboxtext
+{
+  /* Checkbox text */
+  font-size:80%;
+  display: inline;
+}
+
+.candidate-card {
+    display:grid;
+    background-color:white;
+    border-radius:8px;
+    border:1px solid #505050;
+    width:100%;
+    height:64px;
+    padding:16px;
+    grid-template-columns:auto 64px calc(100% - 96px);
+    grid-gap:16px;
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+.img-candidate {
+    width:64px;
+    height:64px;
+    border-radius:100%;
+}
+
+.candidate-name {
+    font-size:36px;
+    font-weight:700;
+    color:#202124;
+}
+
+.candidate-party {
+    font-size:20px;
+    color:#3c4043;
+}
+
+.minicandidate-card {
+    display:grid;
+    width:100%;
+    height:32px;
+    padding:0px;
+    grid-template-columns:36px auto;
+    grid-gap:8px;
+    margin-top:16px;
+    margin-bottom:16px;
+}
+
+.minicandidate-card .img-candidate {
+    width:36px;
+    height:36px;
+    border-radius:100%;
+}
+
+.minicandidate-card .candidate-name {
+    font-size:16px;
+    font-weight:700;
+    color:white;
+}
+
+.minicandidate-card .candidate-position {
+    font-size:12px;
+    color:white;
+}
+
+#vote-selected {
+    width:512px;
+    display:block;
+    margin:0 auto;
+}
+
+.white-text-shadow {
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.absolute {
+    display:block;
+    position:absolute;
+}
+
+#bg {
+    width:100%;
+    height:100vh;
+    z-index:-1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+.error {
+    width:384px;
+    margin:0 auto;
+    padding:8px 0px;
+    background-color:rgb(221, 86, 86);
+    border:1px solid rgb(58, 0, 0);
+    border-radius:8px;
+    text-align:center;
+}
+
+#left-logo {
+    display:absolute;
+    position:fixed;
+    z-index:101;
+    top:20px;
+    left:20px;
+}
+
+#left-logo div {
+    display:block;
+    float:left;
+    padding-right:8px;
+}
+
+#left-logo p {
+    font-size:32px;
+}
+sub {
+    font-size:14px;
+}
+#pre-right-logo {
+    display:absolute;
+    position:fixed;
+    z-index:103;
+    top:32px;
+    right:140px;
+    width:auto;
+}
+#right-logo {
+    display:absolute;
+    position:fixed;
+    z-index:101;
+    top:20px;
+    right:20px;
+}
+
+::-webkit-scrollbar-button{ display: none; height: 4px; border-radius: 0px; background-color: #AAA; } 
+::-webkit-scrollbar-button:hover{ background-color: #AAA; } 
+::-webkit-scrollbar-thumb{ background-color:rgb(4, 122, 60)!important;transition:0.3s;border-radius: 0px; } 
+::-webkit-scrollbar-thumb:hover{ background-color: #115fa8;transition:0.3s; } 
+::-webkit-scrollbar-track{ background-color: #ffffff44; } 
+::-webkit-scrollbar-track:hover{ background-color: #ffffff44; border-radius: 8px; } 
+::-webkit-scrollbar{ width: 4px; }

@@ -1,0 +1,244 @@
+#newAdmin {
+    display:grid;
+    height:calc(100vh - 72px);
+    padding-top:72px;
+    width:100%;
+    grid-template-columns:240px auto;
+}
+
+#sidebar {
+    display:block;
+    padding:12px;
+    background-color:#333;
+    overflow-y:auto;
+}
+
+#mainContent {
+    display:block;
+    padding:36px;
+    height:calc(100vh - 100px);
+    width:calc(100vw - 312px);
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+#newAdminSettings {
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding-top:72px;
+    height:calc(100vh - 72px);
+    width:100%;
+}
+
+#mainContentSettings {
+    display:block;
+    padding:36px;
+    width:calc(100vw - 312px);
+    margin:0 auto;
+}
+
+.hover-home {
+    padding:2px;
+    margin-right:16px;
+    float:left;
+}
+
+.hover-home:hover, .hover-home:focus {
+    background-color:#222;
+    border-radius:1000px;
+}
+
+.page-sub-window-content {
+    background-color:#222222;
+    border-radius:12px;
+    width:300px;
+    height:auto;
+    margin:0 auto;
+    padding:16px;
+}
+
+.page-sub-window {
+    position:absolute;
+    display:block;
+    background-color:#111111dd;
+    width:100%;
+    top:0;
+    left:0;
+    height:100vh;
+    z-index:109;
+}
+
+.window-grid {
+    display:grid;
+    grid-template-columns:auto 32px;
+}
+
+.window-grid img {
+    width:24px;
+    height:24px;
+    border-radius:1000px;
+    background-color:#eeeeee33;
+    padding:4px;
+}
+
+.window-grid p {
+    margin-top:6px;
+    font-size:24px;
+}
+
+.sectionList {
+    display:block;
+    width:196px;
+    padding:10px;
+    background-color:#444;
+    border-radius:6px;
+    margin-bottom:8px;
+}
+
+.selectedSection {
+    background-color:rgb(4, 138, 68);
+}
+
+#sub-nav {
+    grid-template-columns: auto 140px 140px 140px;
+    grid-gap:16px;
+}
+
+.admin-block {
+    background-color:#333;
+    border-radius:4px;
+    padding:16px;
+    margin-bottom:12px;
+}
+.sub-nav-admins {
+    grid-template-columns: auto 210px 210px;
+    grid-gap:16px;
+}
+
+#students {
+    grid-template-columns:32.5% 32.5% 32.5%;
+    grid-gap:1.25%;
+}
+
+.student-lrn {
+    background-color:#333;
+    border-radius:4px;
+    padding:8px 16px;
+    grid-template-columns:auto 36px;
+    grid-gap:16px;
+}
+
+.student-lrn img {
+    width:24px;
+    height:24px;
+}
+
+.student-lrn p {
+    font-size:20px;
+    margin-top:5px;
+}
+
+.student-lrn button {
+    border-collapse:collapse;
+    border:0px;
+    border-radius:4px;
+    background-color:#eeeeee;
+}
+
+.smallWarning-subwindow {
+    font-size:11px;
+    font-style:italic;
+    color:rgb(170, 170, 170);
+}
+
+.limitedWindowSize {
+    overflow-y:scroll;
+}
+
+.indexNumber {
+    grid-template-columns:36px auto;
+    grid-gap:8px;
+    margin-bottom:8px;
+}
+
+.indexNumber p {
+    text-align:center;
+    margin:0px;
+    padding:10px 12px;
+    font-size:16px;
+    background-color:rgb(4, 98, 48);
+    border-radius:1000px;
+}
+
+.modifyButton {
+    background-color:rgb(4, 98, 48)!important;
+}
+.modifyButton:hover, .modifyButton:focus {
+    background-color:rgb(4, 138, 68)!important;
+}
+
+.subWindowError {
+    padding:8px;
+    text-align:center;
+    background-color:#a53434;
+    color:white;
+    border-radius:4px;
+    width:auto;
+    height:auto;
+}
+
+.candidate {
+    display:grid;
+    width:auto;
+    height:48px;
+    background-color:#333;
+    border-radius:4px;
+    padding:12px 16px;
+    grid-template-columns:48px auto 56px 56px 56px;
+    grid-gap:16px;
+    margin-bottom:8px;
+}
+
+.candidate img {
+    width:48px;
+    height:48px;
+    border-radius:1000px;
+}
+
+.candidateName {
+    font-size:32px;
+    font-weight:800;
+}
+
+.candidateButton {
+    border-collapse:collapse;
+    display:block;
+    border-radius:8px;
+    border:0px;
+    background-color:#fff;
+    width:auto;
+    height:48px;
+    padding:0px 10px;
+    transition:0.3s;
+}
+
+.candidateButton img {
+    width:36px;
+    height:36px;
+}
+
+.deleteButton {
+    background-color:#5f0d0d;
+}
+
+.deleteButton:hover, .deleteButton:focus {
+    background-color:#791111;
+}
+
+.highlightCandidate {
+    background-color:rgba(4, 138, 69, 0.431)!important;
+}
+
+.deleteButtonHover:hover, .deleteButtonHover:focus {
+    background-color:#791111!important;
+}

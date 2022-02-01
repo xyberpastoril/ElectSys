@@ -1,0 +1,3 @@
+<input class='block obj-center input-lrn' style="width:300px" type="text" name="partyListName" placeholder="Partylist Name" value='<?php echo (isset($partyListNameMatch) ? $partyListNameMatch : '');?>'>
+<span class="span-8px"></span>
+<input class='block obj-center input-lrn' style="width:300px" type="text" name="partyListAbbr" placeholder="Partylist Abbreviation" value='<?php echo (isset($partyListAbbrMatch) ? $partyListAbbrMatch : '');?>'>

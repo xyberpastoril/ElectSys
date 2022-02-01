@@ -1,0 +1,131 @@
+#header {
+    height:72px;
+    width:100%;
+    background-color:#000000d8;
+}
+
+.candidate-profile {
+    display:block;
+    width:200px;
+    height:auto;
+    background-color:#fff;
+    border-radius:8px;
+    border:1px solid rgb(7, 53, 43);
+    transition:0.3s;
+}
+
+
+.candidate-profile:hover {
+    background-color:#ddddd0;
+    transform: scale(1.02);
+    transition:0.3s;
+}
+
+.candidate-selected {
+    background-color:rgb(231, 208, 108) !important;
+}
+
+.candidate-selected-focus {
+    transform: scale(1.05)!important;
+    background-color:rgb(231, 201, 66) !important;
+}
+
+.candidate-profile img {
+    display:block;
+    width:200px;
+    height:200px;
+    border-radius:6px 6px 0px 0px;
+}
+
+.lastname {
+    font-size:32px;
+    font-weight:900;
+    color:black;
+    text-align:center;
+}
+.firstname {
+    font-size:16px;
+    font-weight:900;
+    color:black;
+    text-align:center;
+}
+.party {
+    font-size:16px;
+    color:black;
+    text-align:center;
+}
+
+.candidate-profile-review {
+    display:block;
+    width:140px;
+    height:auto;
+    background-color:#fff;
+    border-radius:8px;
+    border:1px solid rgb(7, 53, 43);
+    transition:0.3s;
+}
+
+
+.candidate-profile-review:hover {
+    background-color:#ddddd0;
+    transform: scale(1.02);
+    transition:0.3s;
+}
+
+.candidate-profile-review img {
+    display:block;
+    width:140px;
+    height:140px;
+    border-radius:6px 6px 0px 0px;
+}
+
+.lastname-review {
+    font-size:24px;
+    font-weight:900;
+    color:black;
+    text-align:center;
+}
+.firstname-review {
+    font-size:16px;
+    font-weight:900;
+    color:black;
+    text-align:center;
+}
+.party-review {
+    font-size:12px;
+    color:black;
+    text-align:center;
+}
+#position {
+    font-size:32px;
+    text-align:center;
+    font-weight:900;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+#select {
+    font-size:18px;
+    font-weight:400;
+    text-align:center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+#skip {
+    display:block;margin: 0 auto;width:144px;text-align:center;background-color:#444;border:1px solid #222;
+}
+#skip:hover {
+    transform: scale(1.06);
+}
+#back {
+    margin:6px;
+}
+#back img {
+    width:36px;
+    height:36px;
+}
+#back p {
+    padding-left:8px;
+    margin-top:8px;
+    font-size:24px;
+}
+#voteid {
+    margin-top:12px;margin-right:12px;
+}
